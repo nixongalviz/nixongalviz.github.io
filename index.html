@@ -9,56 +9,132 @@
             body{
                 color: black;
                 background: rgb(240, 223, 900);
-                width: 90%;
                 font-style: sans-serif;
                 line-height: 1.1;
                 font-style: normal;
             }
-            H1{
+            h1{
                 color: white;
                 background-color:purple;
                 font-style: oblique;
+                border: 1px ridge white;
+                padding: 5px;
             }
             h2{
                 color: purple;
                 font-style:bold;
+                border: 0,5px ridge white;
+                padding: 10px;
             }
             h3{
-                color:blue;
+                color: purple;
                 background-color:white;
                 font-size: 1.5em;
-                font-weight:bold;
-                font-family: fantasy;
+                font-style: oblique;
+                font-family: Arial, Helvetica, sans-serif;
                 line-height: 1.2;
             }
-            
             h6{
                 color: purple;
-                font-size:13px;
+                font-style:bold;
+                font-size: 1.3em;
                 line-height: 1.3;
+                background: rgba(255,200,200,0.5);
+                border: 2px ridge white;
+                margin-left: 6px;
+                margin-right: 3px;
+                margin-bottom: 3px;
+                margin-top: 3px;
+                 padding: 10px;
+            }        
+            #contenido1{
+                color: black;
+                font-style:bold;
+                margin-left: 3px;
+            }
+            #contenido2{
+                color: black;
+                font-style:bold;
+            }
+            #perfil{
+                color: green;
+                text-align: left;
+
+            }
+            #inicio{
+                text-align: center;
+            }
+            #div-perfil{
+                background: rgb(255, 255, 219);
+                float: left;
+                width: 49%;
+                margin-left: 0px;
+                margin-right: 1px;
+                margin-bottom: 3px;
+                margin-top: 3px;
+                border: 3px ridge white;
+                padding: 3px;
+            }
+            .imagen1{
+                float: left;
+                margin-left: 0px;
+                margin-right: 20px;
+                margin-bottom: 1px;
+                margin-top: 0px
+            }
+
+            .imagen2{
+                float: right;
+                margin-left: 3px;
+                margin-right: 0px;
+                margin-bottom: 1px;
+                margin-top: 2px
+            }
+            #div-experiencia{
+                background: rgb(255, 255, 219);
+                float: right;
+                width: 49%;
+                margin-left: 1px;
+                margin-right: 0px;
+                margin-bottom: 1px;
+                margin-top: 2px;
+                border: 3px ridge white;
+                padding: 1px;
+            }
+            #experiencia{
+                color: green;
+                text-align: left;
+            }
+            #personal{
+                color: white;
+                background-color:purple;
+                font-style: oblique;
+                text-align: center;
+                font-size: 2em;
+                border: 0,5px ridge white;
+                padding: 10px;
+            }
+            #div-general{
+                border: 1px ridge white;
+                padding: 3px;
+                float: left;
+                width: 99%;
             }
             #ultimo{
                 font-size:12px;
                 color: blue;
                 font-style: italic;
+                 float: initial;
+                 position: relative;
+                top: 20px;
+                right: 5;
             }
-            
-            #contenido1{
-                color: black;
-                font-style:bold;
-            }
-            
-            #imagen1{
-                float: left;
-                margin-left: 5px;
-                margin-right: 5px;
-                margin-bottom: 5px;
-            }
+
         </Style>
     </head>
     <body>
         
-        <h1 id="inicio">Mi Primer Blog</h1>
+        <h1 id="inicio">Espacio de Prácticas</h1>
 
         <h3>Contenidos</h3>
         <ul id="contenido1">
@@ -69,37 +145,40 @@
         
     <h2 id="personal">Datos Personales</h2>
         <h6>Mi nombre es <strong>Nixon Galviz</strong>, venezolano.
-        Mi ciudad de nacimiento y residencia es Ciudad Guayana<br>
-        Realmente me encuentro interesado en aprender lo mas que pueda de CSS.
+            Venezolano y residencia es Ciudad Guayana.<br>
+            El presente espacio es desarrollado solo con códigos HTML y CSS, es netamente educativo y de ejemplo
             
         </h6>
         <p><a href="#inicio"> Inicio </a></p>
-        
-            <img class="imagen1" src="https://data.barcelona/wp-content/uploads/2020/01/analista-de-Business-Intelligence-Analyst-01.jpg" width="300">        
-         <h2 id="perfil">Perfil Profesional</h2>
+        <div id="div-general">
+         <div id="div-perfil">
+            <img class="imagen1" src="https://data.barcelona/wp-content/uploads/2020/01/analista-de-Business-Intelligence-Analyst-01.jpg" width="270">        
+            <h2 id="perfil">Perfil Profesional</h2>
             <ul id="contenido1">
                 <li>Técnico Superior Univeristario</li>
                 <li>Abogado</li>
                 <li>Especialista en Gestión de Aduana y Comercio Exterior</li>
-            </ul> 
-        <h6>
+            </ul>     
             
-        </h6>
-       
-    <p><a href="#inicio"> Inicio </a></p>
+        </div>
+
         
-         <h2 id="experiencia">Experiencia Profesional</h2>
-            <ul id="contenido1">
+
+        <div id="div-experiencia" >
+            <img class="imagen2" src="http://www.cantareroabogados.com/wp-content/uploads/cantarero-tuisku-abogados.jpg" width="358">  
+            <h2 id="experiencia">Experiencia Profesional</h2>
+            <ul id="contenido2">
                 <li>Comisión de Administración de Divisas</li>
                 <li>Centro de Comercio Exterior</li>
                 <li>Especialista en Gestión de Aduana y Comercio Exterior</li>
             </ul> 
-        <h6>
-            
-        </h6> 
-        <p id="ultimo">Realmente algo bueno va a suceder de ahora en adelante.</p>
-        
-    <p><a href="#inicio"> Inicio </a></p>    
+         </div>
+        </div>
+
+        <div id="ultimo">
+            <p >Realmente algo bueno va a suceder de ahora en adelante.</p>
+            <p><a href="#inicio"> Inicio </a></p>
+        </div>
         
     </body>
 </html>
